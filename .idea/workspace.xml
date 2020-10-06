@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="36a9e936-d8ef-4096-8a99-55f7284b45ab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/package.js" beforeDir="false" afterPath="$PROJECT_DIR$/business/package.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/packageFactory/javaScriptPackage.js" beforeDir="false" afterPath="$PROJECT_DIR$/business/packageFactory/javaScriptPackage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/subscriber.js" beforeDir="false" afterPath="$PROJECT_DIR$/business/subscriber.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/winston.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/winston.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loaders/mongoose.js" beforeDir="false" afterPath="$PROJECT_DIR$/loaders/mongoose.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/package.js" beforeDir="false" afterPath="$PROJECT_DIR$/repository/package.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scheduler/kue.js" beforeDir="false" afterPath="$PROJECT_DIR$/scheduler/kue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +70,7 @@
       <workItem from="1601941841313" duration="402000" />
       <workItem from="1601942328220" duration="1047000" />
       <workItem from="1601964540086" duration="8041000" />
-      <workItem from="1602008892785" duration="6704000" />
+      <workItem from="1602008892785" duration="6933000" />
     </task>
     <servers />
   </component>
@@ -213,10 +208,10 @@
     </state>
     <state x="630" y="332" width="609" height="562" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1602020300565" />
     <state x="960" y="455" width="639" height="530" key="find.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1601973531620" />
-    <state x="503" y="231" width="672" height="678" key="search.everywhere.popup" timestamp="1602021083926">
+    <state x="503" y="231" width="672" height="678" key="search.everywhere.popup" timestamp="1602021308802">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="503" y="231" width="672" height="678" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1602021083926" />
+    <state x="503" y="231" width="672" height="678" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1602021308802" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
