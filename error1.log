@@ -1,0 +1,246 @@
+2020-10-04 20:47:15 error: Slack bot is not ready. auth.test missing params: token
+2020-10-04 20:47:26 error: 400 - /subscribers - POST - 2 - Ayni repository ayni kullanici icin daha once olusturulmustur. - ::1 - 
+2020-10-04 22:08:00 error: Slack bot is not ready. auth.test missing params: token
+2020-10-04 22:09:49 error: Slack bot is not ready. auth.test missing params: token
+2020-10-04 22:10:00 error: Slack bot is not ready. auth.test missing params: token
+2020-10-04 22:10:07 error: Slack bot is not ready. auth.test missing params: token
+2020-10-04 22:14:42 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:14:03 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:14:46 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:15:59 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:16:18 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:16:36 error: 400 - /subscribers - POST - 2 - Ayni repository ayni kullanici icin daha once olusturulmustur. - ::1 - 
+2020-10-05 00:16:49 error: 500 - /subscribers - GET - -9999 - Error occurred. Please try again later. - ::1 - /Users/bayramhakankocatepe/WebstormProjects/version-check/views/index.ejs:16
+    14|             <input type="submit" class="ghost-button" value="Get Weather">
+    15|         </form>
+ >> 16|         <% if(weather !== null){ %>
+    17|             <p><%= weather %></p>
+    18|         <% } %>
+    19| 
+
+weather is not defined
+2020-10-05 00:16:49 error: 404 - /favicon.ico - GET - 4 - Not found. - ::1 - 
+2020-10-05 00:17:31 error: 500 - /subscribers - GET - -9999 - Error occurred. Please try again later. - ::1 - /Users/bayramhakankocatepe/WebstormProjects/version-check/views/index.ejs:16
+    14|             <input type="submit" class="ghost-button" value="Get Weather">
+    15|         </form>
+ >> 16|         <% if(weather !== null){ %>
+    17|             <p><%= weather %></p>
+    18|         <% } %>
+    19| 
+
+weather is not defined
+2020-10-05 00:19:18 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:19:48 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:19:52 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:19:57 error: 500 - /subscribers - GET - -9999 - Error occurred. Please try again later. - ::1 - /Users/bayramhakankocatepe/WebstormProjects/version-check/views/index.ejs:16
+    14|             <input type="submit" class="ghost-button" value="Get Weather">
+    15|         </form>
+ >> 16|         <% if(weather !== null){ %>
+    17|             <p><%= weather %></p>
+    18|         <% } %>
+    19| 
+
+weather is not defined
+2020-10-05 00:20:31 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:20:31 error: 500 - /subscribers - GET - -9999 - Error occurred. Please try again later. - ::1 - /Users/bayramhakankocatepe/WebstormProjects/version-check/views/index.ejs:16
+    14|             <input type="submit" class="ghost-button" value="Get Weather">
+    15|         </form>
+ >> 16| <!--        <% if(weather !== null){ %>-->
+    17| <!--            <p><%= weather %></p>-->
+    18| <!--        <% } %>-->
+    19| 
+
+weather is not defined
+2020-10-05 00:20:33 error: 500 - /subscribers - GET - -9999 - Error occurred. Please try again later. - ::1 - /Users/bayramhakankocatepe/WebstormProjects/version-check/views/index.ejs:16
+    14|             <input type="submit" class="ghost-button" value="Get Weather">
+    15|         </form>
+ >> 16| <!--        <% if(weather !== null){ %>-->
+    17| <!--            <p><%= weather %></p>-->
+    18| <!--        <% } %>-->
+    19| 
+
+weather is not defined
+2020-10-05 00:20:34 error: 500 - /subscribers - GET - -9999 - Error occurred. Please try again later. - ::1 - /Users/bayramhakankocatepe/WebstormProjects/version-check/views/index.ejs:16
+    14|             <input type="submit" class="ghost-button" value="Get Weather">
+    15|         </form>
+ >> 16| <!--        <% if(weather !== null){ %>-->
+    17| <!--            <p><%= weather %></p>-->
+    18| <!--        <% } %>-->
+    19| 
+
+weather is not defined
+2020-10-05 00:20:34 error: 500 - /subscribers - GET - -9999 - Error occurred. Please try again later. - ::1 - /Users/bayramhakankocatepe/WebstormProjects/version-check/views/index.ejs:16
+    14|             <input type="submit" class="ghost-button" value="Get Weather">
+    15|         </form>
+ >> 16| <!--        <% if(weather !== null){ %>-->
+    17| <!--            <p><%= weather %></p>-->
+    18| <!--        <% } %>-->
+    19| 
+
+weather is not defined
+2020-10-05 00:20:50 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:20:52 error: 404 - /css/style.css - GET - 4 - Not found. - ::1 - 
+2020-10-05 00:22:31 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:22:35 error: 404 - /public/style.css - GET - 4 - Not found. - ::1 - 
+2020-10-05 00:22:36 error: 404 - /public/style.css - GET - 4 - Not found. - ::1 - 
+2020-10-05 00:22:36 error: 404 - /public/style.css - GET - 4 - Not found. - ::1 - 
+2020-10-05 00:22:37 error: 404 - /public/style.css - GET - 4 - Not found. - ::1 - 
+2020-10-05 00:22:37 error: 404 - /public/style.css - GET - 4 - Not found. - ::1 - 
+2020-10-05 00:22:37 error: 404 - /public/style.css - GET - 4 - Not found. - ::1 - 
+2020-10-05 00:23:25 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:23:37 error: 404 - /public/style.css - GET - 4 - Not found. - ::1 - 
+2020-10-05 00:23:54 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:23:55 error: 404 - /public/style.css - GET - 4 - Not found. - ::1 - 
+2020-10-05 00:23:56 error: 404 - /public/style.css - GET - 4 - Not found. - ::1 - 
+2020-10-05 00:24:21 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:24:23 error: 404 - /views/public/style.css - GET - 4 - Not found. - ::1 - 
+2020-10-05 00:24:24 error: 404 - /views/public/style.css - GET - 4 - Not found. - ::1 - 
+2020-10-05 00:24:40 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:25:21 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:25:25 error: 404 - /views/public/style.css - GET - 4 - Not found. - ::1 - 
+2020-10-05 00:25:25 error: 404 - /views/public/style.css - GET - 4 - Not found. - ::1 - 
+2020-10-05 00:25:48 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:25:52 error: 404 - /style.css - GET - 4 - Not found. - ::1 - 
+2020-10-05 00:25:53 error: 404 - /style.css - GET - 4 - Not found. - ::1 - 
+2020-10-05 00:26:35 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:26:37 error: 404 - /style.css - GET - 4 - Not found. - ::1 - 
+2020-10-05 00:26:38 error: 404 - /style.css - GET - 4 - Not found. - ::1 - 
+2020-10-05 00:26:44 error: 404 - /style.css - GET - 4 - Not found. - ::1 - 
+2020-10-05 00:26:53 error: 404 - /style.css - GET - 4 - Not found. - ::1 - 
+2020-10-05 00:26:53 error: 404 - /favicon.ico - GET - 4 - Not found. - ::1 - 
+2020-10-05 00:28:14 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:28:17 error: 404 - /public/style.css - GET - 4 - Not found. - ::1 - 
+2020-10-05 00:28:23 error: 404 - /public/style.css - GET - 4 - Not found. - ::1 - 
+2020-10-05 00:29:47 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:29:55 error: 404 - /public/style.css - GET - 4 - Not found. - ::1 - 
+2020-10-05 00:30:03 error: 404 - /public/style.css - GET - 4 - Not found. - ::1 - 
+2020-10-05 00:30:20 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:30:31 error: 404 - /public/style.css - GET - 4 - Not found. - ::1 - 
+2020-10-05 00:31:09 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:31:18 error: 404 - /public/css/style.css - GET - 4 - Not found. - ::1 - 
+2020-10-05 00:31:38 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:33:50 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:33:56 error: 404 - / - POST - 4 - Not found. - ::1 - 
+2020-10-05 00:33:59 error: 404 - / - POST - 4 - Not found. - ::1 - 
+2020-10-05 00:34:00 error: 404 - / - POST - 4 - Not found. - ::1 - 
+2020-10-05 00:34:09 error: 404 - / - POST - 4 - Not found. - ::1 - 
+2020-10-05 00:34:30 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:34:32 error: 404 - / - POST - 4 - Not found. - ::1 - 
+2020-10-05 00:34:38 error: 404 - /subs - GET - 4 - Not found. - ::1 - 
+2020-10-05 00:34:43 error: 400 - /subscribers - POST - 2 - There is missing fields. - ::1 - 
+2020-10-05 00:35:03 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:35:08 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:35:13 error: 500 - /subscribers - POST - -9999 - Error occurred. Please try again later. - ::1 - Cannot set headers after they are sent to the client
+2020-10-05 00:35:29 error: 500 - /subscribers - POST - -9999 - Error occurred. Please try again later. - ::1 - Cannot set headers after they are sent to the client
+2020-10-05 00:37:10 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:37:14 error: 500 - /subscribers - GET - -9999 - Error occurred. Please try again later. - ::1 - /Users/bayramhakankocatepe/WebstormProjects/version-check/views/index.ejs:16
+    14|             <input type="submit" class="ghost-button" value="Get Weather">
+    15|         </form>
+ >> 16|         <% if(weather !== null){ %>
+    17|             <p><%= weather %></p>
+    18|         <% } %>
+    19|         <% if(error !== null){ %>
+
+weather is not defined
+2020-10-05 00:38:17 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:38:28 error: 500 - /subscribers - POST - -9999 - Error occurred. Please try again later. - ::1 - Cannot set headers after they are sent to the client
+2020-10-05 00:39:46 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:40:35 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:41:25 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:41:50 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:41:55 error: 500 - /subscribers - POST - -9999 - Error occurred. Please try again later. - ::1 - Cannot set headers after they are sent to the client
+2020-10-05 00:42:25 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:42:27 error: 500 - /subscribers - POST - -9999 - Error occurred. Please try again later. - ::1 - Cannot set headers after they are sent to the client
+2020-10-05 00:42:37 error: 500 - /subscribers - POST - -9999 - Error occurred. Please try again later. - ::1 - Cannot set headers after they are sent to the client
+2020-10-05 00:42:43 error: 500 - /subscribers - POST - -9999 - Error occurred. Please try again later. - ::1 - Cannot set headers after they are sent to the client
+2020-10-05 00:42:49 error: 500 - /subscribers - POST - -9999 - Error occurred. Please try again later. - ::1 - Cannot set headers after they are sent to the client
+2020-10-05 00:42:56 error: 500 - /subscribers - POST - -9999 - Error occurred. Please try again later. - ::1 - Cannot set headers after they are sent to the client
+2020-10-05 00:44:19 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:44:19 error: 500 - /subscribers - POST - -9999 - Error occurred. Please try again later. - ::1 - city is not defined
+2020-10-05 00:44:46 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:44:51 error: 500 - /subscribers - POST - -9999 - Error occurred. Please try again later. - ::1 - Cannot set headers after they are sent to the client
+2020-10-05 00:45:01 error: 500 - /subscribers - POST - -9999 - Error occurred. Please try again later. - ::1 - Cannot set headers after they are sent to the client
+2020-10-05 00:47:52 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:48:24 error: Error getting languages from githubCannot convert undefined or null to object
+2020-10-05 00:48:24 error: 400 - /subscribers - POST - 10 - undefined - ::1 - 
+2020-10-05 00:50:47 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:51:42 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:52:07 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:55:02 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:56:12 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:56:47 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:57:23 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:58:02 error: 500 - /subscribers - POST - -9999 - Error occurred. Please try again later. - ::1 - Cannot set headers after they are sent to the client
+2020-10-05 00:58:58 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 00:59:13 error: 400 - /subscribers - POST - 2 - There is already exists same repo with entered subscriber. - ::1 - 
+2020-10-05 00:59:25 error: 500 - /subscribers - POST - -9999 - Error occurred. Please try again later. - ::1 - Cannot set headers after they are sent to the client
+2020-10-05 01:00:48 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 01:01:09 error: Not Updated Package:@material-ui/core
+2020-10-05 01:01:09 error: Not Updated Package:@material-ui/icons
+2020-10-05 01:01:09 error: Not Updated Package:@material-ui/lab
+2020-10-05 01:01:09 error: Not Updated Package:@testing-library/jest-dom
+2020-10-05 01:01:09 error: Not Updated Package:@testing-library/react
+2020-10-05 01:01:09 error: Not Updated Package:@testing-library/user-event
+2020-10-05 01:01:09 error: Not Updated Package:antd
+2020-10-05 01:01:09 error: Not Updated Package:axios
+2020-10-05 01:01:09 error: Not Updated Package:json-server
+2020-10-05 01:01:09 error: Not Updated Package:leaflet
+2020-10-05 01:01:09 error: Not Updated Package:material-table
+2020-10-05 01:01:09 error: Not Updated Package:prop-types
+2020-10-05 01:01:09 error: Not Updated Package:react
+2020-10-05 01:01:09 error: Not Updated Package:react-axios
+2020-10-05 01:01:09 error: Not Updated Package:react-dom
+2020-10-05 01:01:09 error: Not Updated Package:react-leaflet
+2020-10-05 01:01:09 error: Not Updated Package:react-router-dom
+2020-10-05 01:01:09 error: Not Updated Package:react-scripts
+2020-10-05 01:01:09 error: Not Updated Package:react-window
+2020-10-05 01:01:09 error: 500 - /subscribers - POST - -9999 - Error occurred. Please try again later. - ::1 - Cannot set headers after they are sent to the client
+2020-10-05 01:07:20 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 01:07:23 error: 400 - /subscribers - POST - 2 - Ayni repository ayni kullanici icin daha once olusturulmustur. - ::1 - 
+2020-10-05 01:07:50 error: 500 - /subscribers - POST - -9999 - Error occurred. Please try again later. - ::1 - Cannot set headers after they are sent to the client
+2020-10-05 01:09:03 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 01:09:13 error: 500 - /subscribers - POST - -9999 - Error occurred. Please try again later. - ::1 - Cannot set headers after they are sent to the client
+2020-10-05 01:10:40 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 01:10:44 error: 400 - /subscribers - POST - 2 - Invalid format type for entered parameter. - ::1 - 
+2020-10-05 01:10:52 error: 400 - /subscribers - POST - 2 - Invalid format type for entered parameter. - ::1 - 
+2020-10-05 01:11:03 error: 500 - /subscribers - GET - -9999 - Error occurred. Please try again later. - ::1 - Cannot set headers after they are sent to the client
+2020-10-05 01:12:18 error: 500 - /subscribers - POST - -9999 - Error occurred. Please try again later. - ::1 - Cannot set headers after they are sent to the client
+2020-10-05 01:14:50 error: 500 - /subscribers - GET - -9999 - Error occurred. Please try again later. - ::1 - Cannot set headers after they are sent to the client
+2020-10-05 01:14:56 error: 400 - /subscribers - POST - 2 - Invalid format type for entered parameter. - ::1 - 
+2020-10-05 01:18:06 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 01:18:18 error: 400 - /subscribers - POST - 2 - There is already exists same repo with entered subscriber. - ::1 - 
+2020-10-05 01:18:35 error: 500 - /subscribers - GET - -9999 - Error occurred. Please try again later. - ::1 - Cannot set headers after they are sent to the client
+2020-10-05 01:18:57 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 01:19:21 error: 500 - /subscribers - GET - -9999 - Error occurred. Please try again later. - ::1 - Cannot set headers after they are sent to the client
+2020-10-05 01:20:32 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 01:21:22 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 01:21:32 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 01:23:49 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 01:25:57 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 01:26:15 error: 400 - /subscribers - POST - 2 - Ayni repository ayni kullanici icin daha once olusturulmustur. - ::1 - 
+2020-10-05 01:29:26 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 01:29:48 error: Failed get latest dependencies PHPRequest failed with status code 404
+2020-10-05 01:29:58 error: 400 - /subscribers - POST - 8 - Sistemde geçici bir hata oluşmuştur. Lütfen daha sonra tekrar deneyiniz. - ::1 - 
+2020-10-05 01:31:47 error: Failed get latest dependencies PHPRequest failed with status code 404
+2020-10-05 01:31:50 error: 400 - /subscribers - POST - 8 - Sistemde geçici bir hata oluşmuştur. Lütfen daha sonra tekrar deneyiniz. - ::1 - 
+2020-10-05 01:32:38 error: Failed get latest dependencies PHPRequest failed with status code 404
+2020-10-05 01:32:42 error: 400 - /subscribers - POST - 8 - Sistemde geçici bir hata oluşmuştur. Lütfen daha sonra tekrar deneyiniz. - ::1 - 
+2020-10-05 01:36:50 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 01:37:11 error: Failed get latest dependencies PHPRequest failed with status code 404
+2020-10-05 01:38:43 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 01:38:57 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 01:39:07 error: Failed get latest dependencies PHPRequest failed with status code 404
+2020-10-05 01:39:10 error: Failed get latest dependencies PHPRequest failed with status code 404
+2020-10-05 01:40:18 error: 400 - /subscribers - POST - 8 - Sistemde geçici bir hata oluşmuştur. Lütfen daha sonra tekrar deneyiniz. - ::1 - 
+2020-10-05 01:40:35 error: Failed get latest dependencies PHPRequest failed with status code 404
+2020-10-05 01:42:30 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 01:42:33 error: Failed get latest dependencies PHPRequest failed with status code 404
+2020-10-05 01:42:40 error: Failed get latest dependencies PHPRequest failed with status code 404
+2020-10-05 01:44:59 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 01:45:10 error: 400 - /subscribers - POST - 2 - Ayni repository ayni kullanici icin daha once olusturulmustur. - ::1 - 
+2020-10-05 01:45:15 error: Failed get latest dependencies PHPRequest failed with status code 404
+2020-10-05 01:45:19 error: Failed get latest dependencies PHPRequest failed with status code 404
+2020-10-05 01:49:11 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 01:49:11 error: Redis Server is not ready. Address already in use
+2020-10-05 01:49:16 error: Failed get latest dependencies PHPRequest failed with status code 404
+2020-10-05 01:49:17 error: Failed get latest dependencies PHPRequest failed with status code 404

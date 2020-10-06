@@ -1,0 +1,174 @@
+2020-10-05 01:49:18 error: Failed get latest dependencies PHPRequest failed with status code 404
+2020-10-05 01:49:18 error: Failed get latest dependencies PHPRequest failed with status code 404
+2020-10-05 01:50:23 error: Error getting languages from githubSystem supports only one language!
+2020-10-05 01:50:23 error: 400 - /subscribers - POST - 10 - undefined - ::1 - 
+2020-10-05 01:53:51 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 01:53:51 error: Redis Server is not ready. Address already in use
+2020-10-05 01:54:09 error: Error getting languages from githubSystem supports only one language!
+2020-10-05 01:54:09 error: 400 - /subscribers - POST - 10 - undefined - ::1 - 
+2020-10-05 01:54:22 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 01:54:22 error: Redis Server is not ready. Address already in use
+2020-10-05 01:54:36 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 01:54:36 error: Redis Server is not ready. Address already in use
+2020-10-05 02:04:13 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 02:04:13 error: Redis Server is not ready. Address already in use
+2020-10-05 02:05:00 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 02:05:00 error: Redis Server is not ready. Address already in use
+2020-10-05 02:06:24 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 02:06:24 error: Redis Server is not ready. Address already in use
+2020-10-05 02:07:22 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 02:07:22 error: Redis Server is not ready. Address already in use
+2020-10-05 02:08:40 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 02:08:40 error: Redis Server is not ready. Address already in use
+2020-10-05 02:09:05 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 02:09:05 error: Redis Server is not ready. Address already in use
+2020-10-05 02:14:48 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 02:14:48 error: Redis Server is not ready. Address already in use
+2020-10-05 02:14:53 error: Not Updated Package:predis/predis
+2020-10-05 02:15:48 error: Failed get latest dependencies PHPRequest failed with status code 404
+2020-10-05 02:16:04 error: Failed get latest dependencies PHPRequest failed with status code 404
+2020-10-05 02:16:09 error: Not Updated Package:graham-campbell/result-type
+2020-10-05 02:16:09 error: Not Updated Package:phpoption/phpoption
+2020-10-05 02:16:09 error: Not Updated Package:symfony/polyfill-ctype
+2020-10-05 02:16:09 error: Not Updated Package:symfony/polyfill-mbstring
+2020-10-05 02:16:09 error: Not Updated Package:symfony/polyfill-php80
+2020-10-05 02:58:38 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 02:58:38 error: Redis Server is not ready. Address already in use
+2020-10-05 02:59:32 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 02:59:32 error: Redis Server is not ready. Address already in use
+2020-10-05 02:59:48 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 02:59:48 error: Redis Server is not ready. Address already in use
+2020-10-05 03:01:10 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 03:02:22 error: Redis Server is not ready. Address already in use
+2020-10-05 03:04:50 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 03:04:53 error: Redis Server is not ready. Address already in use
+2020-10-05 03:06:27 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 03:06:27 error: Redis Server is not ready. Address already in use
+2020-10-05 03:09:29 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 03:09:29 error: Redis Server is not ready. Address already in use
+2020-10-05 03:10:36 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 03:10:36 error: Redis Server is not ready. Address already in use
+2020-10-05 03:17:49 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 03:17:49 error: Redis Server is not ready. Address already in use
+2020-10-05 11:37:12 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 11:37:34 error: 400 - /subscribers - POST - 2 - Ayni repository ayni kullanici icin daha once olusturulmustur. - ::1 - 
+2020-10-05 11:37:39 error: Failed get latest dependencies PHPRequest failed with status code 404
+2020-10-05 11:37:39 error: Failed get latest dependencies PHPRequest failed with status code 404
+2020-10-05 11:40:54 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 11:43:42 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 11:44:33 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 11:46:29 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 11:47:07 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 11:49:15 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 11:55:46 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 12:35:11 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 12:35:57 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 12:39:19 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 12:43:56 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 12:44:19 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 12:47:30 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 12:47:36 error: Not Updated Package:luxon
+2020-10-05 12:47:49 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 12:47:54 error: Failed get latest dependencies JavaScriptRequest failed with status code 400
+2020-10-05 12:47:54 error: 400 - /subscribers - POST - 9 - Sistemde geçici bir hata oluşmuştur. Lütfen daha sonra tekrar deneyiniz. - ::1 - 
+2020-10-05 12:51:26 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 12:52:22 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 12:52:25 error: 400 - /subscribers - POST - 2 - Ayni repository ayni kullanici icin daha once olusturulmustur. - ::1 - 
+2020-10-05 12:52:53 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 12:53:00 error: 400 - /subscribers - POST - 2 - Ayni repository ayni kullanici icin daha once olusturulmustur. - ::1 - 
+2020-10-05 13:02:41 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 13:03:54 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 13:05:32 error: Not Updated Package:node-cron
+2020-10-05 13:35:45 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 13:35:45 error: Redis Server is not ready. Address already in use
+2020-10-05 13:36:30 error: 500 - /subscribers - POST - -9999 - Bir hata oluştu. Lütfen daha sonra tekrar dene. - ::1 - Cannot convert undefined or null to object
+2020-10-05 13:36:54 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 13:36:54 error: Redis Server is not ready. Address already in use
+2020-10-05 13:37:01 error: 400 - /subscribers - POST - 2 - Ayni repository ayni kullanici icin daha once olusturulmustur. - ::1 - 
+2020-10-05 13:37:24 error: 500 - /subscribers - POST - -9999 - Bir hata oluştu. Lütfen daha sonra tekrar dene. - ::1 - Cannot convert undefined or null to object
+2020-10-05 13:37:38 error: 400 - /subscribers - POST - 2 - Ayni repository ayni kullanici icin daha once olusturulmustur. - ::1 - 
+2020-10-05 13:37:45 error: 500 - /subscribers - POST - -9999 - Bir hata oluştu. Lütfen daha sonra tekrar dene. - ::1 - Cannot convert undefined or null to object
+2020-10-05 13:38:05 error: 400 - /subscribers - POST - 2 - Ayni repository ayni kullanici icin daha once olusturulmustur. - ::1 - 
+2020-10-05 13:40:02 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 13:40:02 error: Redis Server is not ready. Address already in use
+2020-10-05 14:00:49 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 14:00:49 error: Redis Server is not ready. Address already in use
+2020-10-05 14:00:59 error: 400 - /subscribers - POST - 2 - Ayni repository ayni kullanici icin daha once olusturulmustur. - ::1 - 
+2020-10-05 14:06:32 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 14:06:32 error: Redis Server is not ready. Address already in use
+2020-10-05 14:06:35 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 14:06:35 error: Redis Server is not ready. Address already in use
+2020-10-05 14:08:29 error: There has been a temporary error. Please try again later.packageModel.create(...).toJSON is not a function
+2020-10-05 14:08:29 error: 400 - /subscribers - POST - 6 - undefined - ::1 - 
+2020-10-05 14:08:31 error: 400 - /subscribers - POST - 2 - Ayni repository ayni kullanici icin daha once olusturulmustur. - ::1 - 
+2020-10-05 14:09:31 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 14:09:31 error: Redis Server is not ready. Address already in use
+2020-10-05 14:09:59 error: There has been a temporary error. Please try again later.Cannot read property 'forEach' of undefined
+2020-10-05 14:09:59 error: 400 - /subscribers - POST - 6 - undefined - ::1 - 
+2020-10-05 14:10:44 error: There has been a temporary error. Please try again later.Cannot read property 'forEach' of undefined
+2020-10-05 14:10:44 error: 400 - /subscribers - POST - 6 - undefined - ::1 - 
+2020-10-05 14:13:16 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 14:13:16 error: Redis Server is not ready. Address already in use
+2020-10-05 14:16:33 error: Not Updated Package: redis 
+2020-10-05 14:16:39 error: Failed get latest dependencies PHPCannot read property 'GET_LATEST_PACKAGE_VERSIONS_API_URL_FOR_PHP' of undefined
+2020-10-05 14:17:38 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 14:17:38 error: Redis Server is not ready. Address already in use
+2020-10-05 14:17:40 error: Failed get latest dependencies PHPCannot read property 'GET_LATEST_PACKAGE_VERSIONS_API_URL_FOR_PHP' of undefined
+2020-10-05 14:50:12 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 14:50:12 error: Redis Server is not ready. Address already in use
+2020-10-05 14:50:18 error: Failed get latest dependencies PHPCannot read property 'GET_LATEST_PACKAGE_VERSIONS_API_URL_FOR_PHP' of undefined
+2020-10-05 14:51:10 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 14:51:10 error: Redis Server is not ready. Address already in use
+2020-10-05 14:52:41 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 14:52:41 error: Redis Server is not ready. Address already in use
+2020-10-05 14:53:06 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 14:53:06 error: Redis Server is not ready. Address already in use
+2020-10-05 14:53:43 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 14:53:43 error: Redis Server is not ready. Address already in use
+2020-10-05 14:54:30 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 14:54:30 error: Redis Server is not ready. Address already in use
+2020-10-05 14:56:44 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 14:56:44 error: Redis Server is not ready. Address already in use
+2020-10-05 19:32:34 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 19:33:45 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 19:33:53 error: 400 - /subscribers - POST - 2 - Ayni repository ayni kullanici icin daha once olusturulmustur. - ::1 - 
+2020-10-05 19:37:30 error: 400 - /subscribers - POST - 2 - Ayni repository ayni kullanici icin daha once olusturulmustur. - ::1 - 
+2020-10-05 19:41:17 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 19:43:36 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 19:46:31 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 19:48:23 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 19:49:14 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 19:49:27 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 19:49:36 error: 400 - /subscribers - POST - 2 - Ayni repository ayni kullanici icin daha once olusturulmustur. - ::1 - 
+2020-10-05 20:00:12 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 20:00:12 error: Redis Server is not ready. Address already in use
+2020-10-05 20:03:25 error: Slack bot is not ready. auth.test missing params: token
+2020-10-05 20:03:25 error: Redis Server is not ready. Address already in use
+2020-10-06 02:11:13 error: Slack bot is not ready. auth.test missing params: token
+2020-10-06 02:11:13 error: Redis Server is not ready. Address already in use
+2020-10-06 02:28:04 error: Slack bot is not ready. auth.test missing params: token
+2020-10-06 02:28:04 error: Redis Server is not ready. Address already in use
+2020-10-06 02:28:23 error: 500 - /subscribers - POST - -9999 - Bir hata oluştu. Lütfen daha sonra tekrar dene. - ::1 - Subscriber validation failed: language: Path `language` is required.
+2020-10-06 02:29:03 error: 500 - /subscribers - POST - -9999 - Bir hata oluştu. Lütfen daha sonra tekrar dene. - ::1 - Subscriber validation failed: language: Path `language` is required.
+2020-10-06 02:29:57 error: 500 - /subscribers - POST - -9999 - Bir hata oluştu. Lütfen daha sonra tekrar dene. - ::1 - Subscriber validation failed: language: Path `language` is required.
+2020-10-06 02:30:26 error: Slack bot is not ready. auth.test missing params: token
+2020-10-06 02:30:26 error: Redis Server is not ready. Address already in use
+2020-10-06 02:31:58 error: Slack bot is not ready. auth.test missing params: token
+2020-10-06 02:31:58 error: Redis Server is not ready. Address already in use
+2020-10-06 02:33:11 error: Slack bot is not ready. auth.test missing params: token
+2020-10-06 02:33:11 error: Redis Server is not ready. Address already in use
+2020-10-06 02:33:47 error: Slack bot is not ready. auth.test missing params: token
+2020-10-06 02:33:47 error: Redis Server is not ready. Address already in use
+2020-10-06 02:34:06 error: 500 - /subscribers - POST - -9999 - Bir hata oluştu. Lütfen daha sonra tekrar dene. - ::1 - /Users/bayramhakankocatepe/WebstormProjects/version-check/views/index.ejs:17
+    15|             <input type="submit" class="ghost-button" value="Repository Version Checker">
+    16|         </form>
+ >> 17|         <% if(outdatedDependencies !== null){ %>
+    18|             <p>Outdated Dependencies</p>
+    19|             <p><%= JSON.stringify(outdatedDependencies) %></p>
+    20|         <% } %>
+
+outdatedDependencies is not defined
+2020-10-06 02:36:30 error: Slack bot is not ready. auth.test missing params: token
+2020-10-06 02:36:30 error: Redis Server is not ready. Address already in use
+2020-10-06 02:36:32 error: 400 - /subscribers - POST - 2 - Ayni repository ayni kullanici icin daha once olusturulmustur. - ::1 - 
+2020-10-06 09:15:21 error: Slack bot is not ready. auth.test missing params: token

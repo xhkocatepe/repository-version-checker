@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="container">
+    <fieldset>
+        <form action="/subscribers" method="post">
+            <input name="repository" type="text" class="ghost-input" placeholder="Enter a repository" required>
+            <input name="subscriber" type="text" class="ghost-input" placeholder="Enter a subscriber" required>
+            <input type="submit" class="ghost-button" value="Repository Version Checker">
+        </form>
+        <% if(outdatedPackages !== null){ %>
+            <p>Outdated Packages</p>
+            <p><%= JSON.stringify(outdatedPackages) %></p>
+        <% } %>
+        <% if(error !== null){ %>
+            <p><%= error %></p>
+        <% } %>
+    </fieldset>
+</div>
+</body>
+</html>
