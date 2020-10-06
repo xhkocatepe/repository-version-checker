@@ -16,13 +16,6 @@ module.exports.create = async ({ res, req: { repository, subscriber } }) => {
     );
     await packageBusiness.createLatestPackages({ packageInstance, language: packageInstance.language });
 
-    /**
-     * TODO
-     *  -------------Olusturulmadan once -------------
-     *  Step 0: Ilk kayit olurken eger sistemin saatine bakilacak, Or: 15:50 ve Repo: 'R1'
-     *  Step 1: Sistem de aktif processlere bakilacak, eger 15:50 yoksa direkt createJob.
-     *  Step 2: Aktif processlerden 15:50 varsa, her halukarda olusturulmayacak. Yani JobName: HH:mm
-     * */
     kue.subscriberSchedulerJob();
 
     res.render('index', { outdatedPackages, error: null });
