@@ -1,0 +1,186 @@
+const _ = require('lodash');
+const axios = require('axios').default;
+
+const logger = require('../config/winston');
+const subscriberRepo = require('../repository/subscriber');
+const packageBusiness = require('./package');
+
+const PackageFactory = require('./packageFactory/packageFactory');
+
+const CONSTANTS = require('../utils/constants');
+const { BadRequestError } = require('../utils/customError');
+const { RETURN_MESSAGES, VALIDATION_MESSAGES } = require('../utils/messages');
+
+module.exports.getDefinedRepositoryLanguage = async ({ repository }) => {
+    const definedLanguages = [...PackageFactory.instances.keys()];
+    let repoLanguage;
+
+    for (const lang of definedLanguages) {
+        const jsonFileName = CONSTANTS.PACKAGES_INFO().FILE_NAME[lang];
+        const packageUrlPath = `repos/${repository}/contents/${jsonFileName}`;
+        const packageUrl = new URL(packageUrlPath, CONSTANTS.GITHUB_API_BASE_URL);
+        try {
+            // eslint-disable-next-line no-await-in-loop
+            const { data: { content } } = await axios.get(packageUrl.href);
+            if (content) {
+                repoLanguage = lang;
+                return repoLanguage;
+            }
+        } catch (error) {
+            logger.info(`missing language ${lang}`, error);
+        }
+    }
+
+    if (!repoLanguage) {
+        throw new BadRequestError(
+            RETURN_MESSAGES.FAILED_GET_LATEST_REPOSITORY_LANGUAGES,
+            RETURN_MESSAGES.FAILED_GET_LATEST_REPOSITORY_LANGUAGES.code
+        );
+    }
+
+    return repoLanguage;
+};
+
+module.exports.checkRepositoryWithSubscriberAlreadyExists = async ({ repository, subscriber }) => {
+    const existingRecord = await subscriberRepo.findSubscriberByByRepoAndSubscriberMail({ repository, subscriber });
+    if (existingRecord) {
+        throw new BadRequestError(
+            VALIDATION_MESSAGES.DUPLICATE_REPO_WITH_SUBSCRIBER, RETURN_MESSAGES.ERR_VALIDATION.code
+        );
+    }
+};
+
+module.exports.createSubscriber = ({ repository, subscriber, outdatedPackages, language }) => {
+    try {
+        return subscriberRepo.create(
+            { repository, subscriber, outdatedPackages: Object.keys(outdatedPackages), language }
+        );
+    } catch (error) {
+        logger.error(RETURN_MESSAGES.NOT_CREATED_SUBSCRIBER.messages.en, error);
+
+        throw new BadRequestError(RETURN_MESSAGES.NOT_CREATED_SUBSCRIBER, RETURN_MESSAGES.NOT_CREATED_SUBSCRIBER.code);
+    }
+};
+
+module.exports.updateSubscriber = ({ repository, subscriber, outdatedPackages }) => {
+    try {
+        return subscriberRepo.update({ repository, subscriber }, { outdatedPackages: Object.keys(outdatedPackages) });
+    } catch (error) {
+        logger.error(RETURN_MESSAGES.NOT_UPDATED_SUBSCRIBER.messages.en, error);
+
+        throw new BadRequestError(RETURN_MESSAGES.NOT_UPDATED_SUBSCRIBER, RETURN_MESSAGES.NOT_UPDATED_SUBSCRIBER.code);
+    }
+};
+
+module.exports.updateSubscribesWithPackagesViaScheduler = async ({ schedulerTime }) => {
+    try {
+        // STEP 1
+        const subscribersWithRepo = await subscriberRepo.findSubscribersWithRepoBySchedulerTime({ schedulerTime });
+        // STEP 2
+        const subscribersWithDistinctRepo = _.uniqBy(subscribersWithRepo, 'repository');
+
+        // STEP 3
+        // TODO Optional! For the performance Check Repository is modified or not
+
+        // STEP 4
+        // Get Current Packages Through Github API
+        const reposWithCurrentPackages = [];
+        for (const subsWithRepo of subscribersWithDistinctRepo) {
+            const packageInstance = PackageFactory.getInstance(
+                { repository: subsWithRepo.repository, language: subsWithRepo.language }
+            );
+            // eslint-disable-next-line no-await-in-loop
+            await packageInstance.setCurrentPackages();
+            reposWithCurrentPackages.push(
+                { repository: subsWithRepo.repository,
+                    currentPackages: packageInstance.currentPackages,
+                    language: subsWithRepo.language,
+                    packageInstance }
+            );
+        }
+
+        // STEP 5
+        // All Unique Distinct Packages
+        const allPackagesDistinct = [];
+        reposWithCurrentPackages.forEach((repoInfo) => {
+            Object.keys(repoInfo.currentPackages).forEach((packageName) => {
+                if (!allPackagesDistinct.includes(packageName)) {
+                    allPackagesDistinct.push(
+                        { name: packageName,
+                            language: repoInfo.language,
+                            version: repoInfo.currentPackages[packageName] }
+                    );
+                }
+            });
+        });
+
+        // STEP 6 TODO IPTAL OLABILIR setPackageNamesToSendAPI AYNI ISI YAPIYOR!!
+        // Check Control Package DB Exists
+        // Ex: packageNamesDistinct = [axios,lodash] , latestPackagesFromDB = [axios] means that lodash is new!
+
+        // Latest Packages on DB
+        const definedLanguages = [...PackageFactory.instances.keys()];
+        const latestPackagesFromDBObjectFormatted = {};
+        let latestPackagesFromDB = [];
+        for (const lang of definedLanguages) {
+            const allPackagesDistinctsByLanguage = allPackagesDistinct.filter((item) => item.language === lang);
+            const packageNamesDistinctByLanguage = allPackagesDistinctsByLanguage.map((item) => item.name);
+            latestPackagesFromDB =
+                // eslint-disable-next-line no-await-in-loop
+                await packageBusiness.getPackagesByPackageNameAndLang(
+                    { packageNames: packageNamesDistinctByLanguage, language: lang }
+                );
+            latestPackagesFromDB.forEach((item) => {
+                latestPackagesFromDBObjectFormatted[item] = item.version;
+            });
+        }
+
+
+        // STEP 7
+        // Filter Packages Names Because of Exists on DB
+        // Elimizde olmayanlar bunlar diyebiliriz.
+        const currentPackagesFromAPI = _.difference(allPackagesDistinct, latestPackagesFromDB);
+
+        // STEP 8
+        // Get Latest Packages Through API
+        const resultUpdatePackageVersion = await packageBusiness.updatePackageVersions(
+            { packages: currentPackagesFromAPI }
+        );
+        // packageDB Object
+        // Ex [{ PHPParser : 1.0.0 } ,  lodash : 1.0.0 } ]
+        const latestPackagesFromAPI = resultUpdatePackageVersion.map((item) => ({
+            latestPackages: item.latestPackages,
+            language: item.language,
+        }));
+
+
+        // STEP 9
+        // Loop Repo and inject Packages
+
+        const outdatedPackagesWithRepo = {};
+        for (const subs of reposWithCurrentPackages) {
+            const { latestPackages } = latestPackagesFromAPI.find(
+                (item) => item.language === subs.language
+            );
+
+            subs.packageInstance.latestPackages = Object.assign(latestPackagesFromDBObjectFormatted, latestPackages);
+            subs.packageInstance.setOutdatedPackages();
+            outdatedPackagesWithRepo[subs.packageInstance.repository] = subs.packageInstance.outdatedPackages;
+        }
+
+        // STEP 10
+        // Loop Subscriber return with subscriber
+        return subscribersWithRepo.map((subscriberDB) => ({
+            outdatedPackages: outdatedPackagesWithRepo[subscriberDB.repository],
+            repository: subscriberDB.repository,
+            subscriber: subscriberDB.subscriber,
+        }));
+    } catch (error) {
+        logger.error(RETURN_MESSAGES.NOT_SUCCESSFUL_SUBSCRIBER_SCHEDULER.messages.en, error);
+
+        throw new BadRequestError(
+            RETURN_MESSAGES.NOT_SUCCESSFUL_SUBSCRIBER_SCHEDULER,
+            RETURN_MESSAGES.NOT_SUCCESSFUL_SUBSCRIBER_SCHEDULER.code
+        );
+    }
+};

@@ -1,5 +1,8 @@
-# repository-version-checker
 Repository Version Checker
+
+Bayram Hakan Kocatepe
+
+Start:
 
 npm install
 
