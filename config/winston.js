@@ -9,7 +9,6 @@ const logger = winston.createLogger({
         winston.format.printf((info) => `${info.timestamp} ${info.level}: ${info.message}`)
     ),
     transports: [
-        // TODO: File transport will be replaced, e.g: https://github.com/timdp/winston-aws-cloudwatch
         new winston.transports.File({
             filename: 'error.log',
             maxFiles: 2,

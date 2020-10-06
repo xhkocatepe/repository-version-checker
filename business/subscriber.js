@@ -75,15 +75,19 @@ module.exports.updateSubscriber = ({ repository, subscriber, outdatedPackages })
 module.exports.updateSubscribesWithPackagesViaScheduler = async ({ schedulerTime }) => {
     try {
         // STEP 1
-        const subscribersWithRepo = await subscriberRepo.findSubscribersWithRepoBySchedulerTime({ schedulerTime });
+        // Find Subscribers from Subscriber Collections
+        const subscribersWithRepo =
+            await subscriberRepo.findSubscribersWithRepoBySchedulerTime({ schedulerTime });
+
         // STEP 2
+        // We continue only distinct repo for the performance
         const subscribersWithDistinctRepo = _.uniqBy(subscribersWithRepo, 'repository');
 
         // STEP 3
         // TODO Optional! For the performance Check Repository is modified or not
 
         // STEP 4
-        // Get Current Packages Through Github API
+        // Get current packages through Github API because repo must be added or deleted any new packages.
         const reposWithCurrentPackages = [];
         for (const subsWithRepo of subscribersWithDistinctRepo) {
             const packageInstance = PackageFactory.getInstance(
@@ -100,7 +104,7 @@ module.exports.updateSubscribesWithPackagesViaScheduler = async ({ schedulerTime
         }
 
         // STEP 5
-        // All Unique Distinct Packages
+        // Get all unique distinct packages. We subtract common packages between repos.
         const allPackagesDistinct = [];
         reposWithCurrentPackages.forEach((repoInfo) => {
             Object.keys(repoInfo.currentPackages).forEach((packageName) => {
@@ -114,11 +118,9 @@ module.exports.updateSubscribesWithPackagesViaScheduler = async ({ schedulerTime
             });
         });
 
-        // STEP 6 TODO IPTAL OLABILIR setPackageNamesToSendAPI AYNI ISI YAPIYOR!!
-        // Check Control Package DB Exists
+        // STEP 6
+        // Check packages existing on DB
         // Ex: packageNamesDistinct = [axios,lodash] , latestPackagesFromDB = [axios] means that lodash is new!
-
-        // Latest Packages on DB
         const definedLanguages = [...PackageFactory.instances.keys()];
         const latestPackagesFromDBObjectFormatted = {};
         let latestPackagesFromDB = [];
@@ -131,32 +133,23 @@ module.exports.updateSubscribesWithPackagesViaScheduler = async ({ schedulerTime
                     { packageNames: packageNamesDistinctByLanguage, language: lang }
                 );
             latestPackagesFromDB.forEach((item) => {
-                latestPackagesFromDBObjectFormatted[item] = item.version;
+                latestPackagesFromDBObjectFormatted[item.name] = item.version;
             });
         }
 
-
         // STEP 7
-        // Filter Packages Names Because of Exists on DB
-        // Elimizde olmayanlar bunlar diyebiliriz.
-        const currentPackagesFromAPI = _.difference(allPackagesDistinct, latestPackagesFromDB);
+        // Filtering by packages names because of existing on DB
+        const currentPackagesNonExistsDB =
+            allPackagesDistinct.filter((item) => !latestPackagesFromDB.some((pkg) => pkg.name === item.name));
 
         // STEP 8
-        // Get Latest Packages Through API
-        const resultUpdatePackageVersion = await packageBusiness.updatePackageVersions(
-            { packages: currentPackagesFromAPI }
+        // Get latest packages through API
+        const latestPackagesFromAPI = await packageBusiness.updatePackageVersions(
+            { packages: currentPackagesNonExistsDB }
         );
-        // packageDB Object
-        // Ex [{ PHPParser : 1.0.0 } ,  lodash : 1.0.0 } ]
-        const latestPackagesFromAPI = resultUpdatePackageVersion.map((item) => ({
-            latestPackages: item.latestPackages,
-            language: item.language,
-        }));
-
 
         // STEP 9
-        // Loop Repo and inject Packages
-
+        // Loop between repos, inject packages and match package versions on repo
         const outdatedPackagesWithRepo = {};
         for (const subs of reposWithCurrentPackages) {
             const { latestPackages } = latestPackagesFromAPI.find(
@@ -169,7 +162,7 @@ module.exports.updateSubscribesWithPackagesViaScheduler = async ({ schedulerTime
         }
 
         // STEP 10
-        // Loop Subscriber return with subscriber
+        // Loop between subscribers and return results with outdated packages.
         return subscribersWithRepo.map((subscriberDB) => ({
             outdatedPackages: outdatedPackagesWithRepo[subscriberDB.repository],
             repository: subscriberDB.repository,

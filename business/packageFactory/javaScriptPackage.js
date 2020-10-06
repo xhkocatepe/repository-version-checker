@@ -51,6 +51,6 @@ class JavaScriptPackage extends Package {
     }
 }
 
-JavaScriptPackage.registerToFactory(); // todo invoke
+JavaScriptPackage.registerToFactory();
 
 module.exports = JavaScriptPackage;

@@ -49,4 +49,4 @@ module.exports.init = () => {
         .catch(handleInitialConnection);
 };
 
-// TODO can be added session for transactional operations.
+// TODO next feature! can be added session for transactional operations.
