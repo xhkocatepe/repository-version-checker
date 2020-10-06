@@ -38,7 +38,7 @@ module.exports.updatePackageVersionsViaScheduler = async () => {
 module.exports.updatePackageVersions = async ({ packages }) => {
     const definedLanguages = [...PackageFactory.instances.keys()];
 
-    const result = [];
+    const results = [];
     // eslint-disable-next-line no-restricted-syntax
     for (const language of definedLanguages) {
         const packagesFiltered = packages.filter((packageItem) => packageItem.language === language);
@@ -55,21 +55,26 @@ module.exports.updatePackageVersions = async ({ packages }) => {
         packageInstance.setOutdatedPackages();
 
         try {
-            result.push(
-                {
-                    // eslint-disable-next-line no-await-in-loop
-                    bulkUpdateResult: await packageRepo.bulkUpdate(
-                        { packagesObject: packageInstance.latestPackages, language }
-                    ),
-                    latestPackages: packageInstance.latestPackages,
-                    language,
-                },
-
-            );
+            results
+                .push(
+                    {
+                        // eslint-disable-next-line no-await-in-loop
+                        bulkUpdateResult: await packageRepo.bulkUpdate(
+                            { packagesObject: packageInstance.latestPackages, language }
+                        ),
+                        latestPackages: packageInstance.latestPackages,
+                        language,
+                    },
+                );
         } catch (error) {
-            logger.error(`Error Bulk Updateing this ${language}`);
+            logger.error(`Error Bulk Updating this ${language} and error:${error}`);
+            results.push({
+                bulkUpdateResult: { error: error.message },
+                latestPackages: packageInstance.latestPackages,
+                language,
+            });
         }
     }
 
-    return result;
+    return results;
 };

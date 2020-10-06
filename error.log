@@ -172,3 +172,28 @@ outdatedDependencies is not defined
 2020-10-06 02:36:30 error: Redis Server is not ready. Address already in use
 2020-10-06 02:36:32 error: 400 - /subscribers - POST - 2 - Ayni repository ayni kullanici icin daha once olusturulmustur. - ::1 - 
 2020-10-06 09:15:21 error: Slack bot is not ready. auth.test missing params: token
+2020-10-06 10:48:16 error: Slack bot is not ready. auth.test missing params: token
+2020-10-06 10:49:30 error: Slack bot is not ready. auth.test missing params: token
+2020-10-06 10:50:23 error: Slack bot is not ready. auth.test missing params: token
+2020-10-06 10:50:34 error: 400 - /subscribers - POST - 2 - Ayni repository ayni kullanici icin daha once olusturulmustur. - ::1 - 
+2020-10-06 10:54:32 error: Failed get latest packages PHPClient network socket disconnected before secure TLS connection was established
+2020-10-06 23:21:30 error: Slack bot is not ready. auth.test missing params: token
+2020-10-06 23:21:47 error: 404 - /favicon.ico - GET - 4 - Not found. - ::1 - 
+2020-10-06 23:25:28 error: Slack bot is not ready. auth.test missing params: token
+2020-10-06 23:49:31 error: Error Bulk Updateing this PHP
+2020-10-06 23:52:04 error: Slack bot is not ready. auth.test missing params: token
+2020-10-06 23:56:09 error: Slack bot is not ready. auth.test missing params: token
+2020-10-06 23:56:21 error: Slack bot is not ready. auth.test missing params: token
+2020-10-06 23:57:01 error: Error Bulk Updateing this PHP
+2020-10-07 00:04:53 error: Slack bot is not ready. auth.test missing params: token
+2020-10-07 00:05:55 error: Slack bot is not ready. auth.test missing params: token
+2020-10-07 00:07:02 error: Error Bulk Updateing this PHP and error:MongoError: Invalid Operation, no operations specified
+2020-10-07 00:07:02 error: Error Bulk Updateing this JavaScript and error:MongoError: Invalid Operation, no operations specified
+2020-10-07 00:08:38 error: Slack bot is not ready. auth.test missing params: token
+2020-10-07 00:18:10 error: Slack bot is not ready. auth.test missing params: token
+2020-10-07 00:19:37 error: Slack bot is not ready. auth.test missing params: token
+2020-10-07 00:19:37 error: Redis Server is not ready. Address already in use
+2020-10-07 00:20:30 error: Slack bot is not ready. auth.test missing params: token
+2020-10-07 00:20:30 error: Redis Server is not ready. Address already in use
+2020-10-07 00:40:05 error: Slack bot is not ready. auth.test missing params: token
+2020-10-07 00:40:05 error: Redis Server is not ready. Address already in use

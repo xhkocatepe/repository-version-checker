@@ -13,14 +13,21 @@ class Package {
         return packageModel.find({ name: packageNames, language }).lean();
     }
 
-    bulkUpdate({ packagesObject, language }) {
+    // eslint-disable-next-line class-methods-use-this
+    async bulkUpdate({ packagesObject, language }) {
+        let result;
         const bulkWrite = Object.keys(packagesObject).map((packageItem) => (
             { updateOne:
                     { filter: { name: packageItem, version: packagesObject[packageItem] },
                         update: { name: packageItem, version: packagesObject[packageItem], language },
                         upsert: true } }
         ));
-        return packageModel.bulkWrite(bulkWrite);
+
+        if (bulkWrite.length) {
+            result = await packageModel.bulkWrite(bulkWrite);
+        }
+
+        return result;
     }
 }
 
