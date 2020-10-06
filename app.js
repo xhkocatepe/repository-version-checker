@@ -3,12 +3,12 @@ const morgan = require('morgan');
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const validator = require('express-validator');
-const awsServerlessExpressMiddleware = require('aws-serverless-express/middleware');
 require('dotenv-flow').config();
 const logger = require('./config/winston');
 const slackLoader = require('./loaders/slack');
 const routeLoader = require('./loaders/route');
 const mailerLoader = require('./loaders/mailer');
+const classLoader = require('./loaders/class');
 const redisServer = require('./loaders/redisServer');
 
 const schedulerAllPackageUpdates = require('./scheduler/kue');
@@ -20,12 +20,6 @@ const errorHandlerMiddleware = require('./middlewares/errorHandler');
 const { NotFoundError } = require('./utils/customError');
 const { ERR_NOTFOUND } = require('./utils/messages').RETURN_MESSAGES;
 
-// setClassInit yap.
-require('./business/packageFactory/packageFactory');
-require('./business/packageFactory/package');
-require('./business/packageFactory/phpPackage');
-require('./business/packageFactory/javaScriptPackage');
-
 const app = express();
 
 logger.verbose(`environment: ${process.env.NODE_ENV}`);
@@ -34,6 +28,7 @@ mailerLoader();
 slackLoader();
 redisServer();
 mongooseLoader.init();
+classLoader();
 
 schedulerAllPackageUpdates.getLatestAndUpdatePackages();
 
