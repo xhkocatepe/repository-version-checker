@@ -197,3 +197,7 @@ outdatedDependencies is not defined
 2020-10-07 00:20:30 error: Redis Server is not ready. Address already in use
 2020-10-07 00:40:05 error: Slack bot is not ready. auth.test missing params: token
 2020-10-07 00:40:05 error: Redis Server is not ready. Address already in use
+2020-10-07 00:57:39 error: Slack bot is not ready. auth.test missing params: token
+2020-10-07 00:57:39 error: Redis Server is not ready. Address already in use
+2020-10-07 00:57:43 error: 404 - / - GET - 4 - Not found. - ::1 - 
+2020-10-07 01:00:04 error: 500 - /subscribers - POST - -9999 - Error occurred. Please try again later. - ::1 - jobInfo is not defined

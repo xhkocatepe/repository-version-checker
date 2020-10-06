@@ -34,5 +34,5 @@ module.exports.subscriberSchedulerJob = () => {
     const [hour, min] = jobName.split(':');
     Queue.every(`${min} ${hour} * * *`, job);
 
-    worker.subscriberSchedulerJobWorker({ jobName: jobInfo.jobName });
+    worker.subscriberSchedulerJobWorker({ jobName });
 };
