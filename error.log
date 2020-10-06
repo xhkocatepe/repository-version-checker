@@ -171,3 +171,4 @@ outdatedDependencies is not defined
 2020-10-06 02:36:30 error: Slack bot is not ready. auth.test missing params: token
 2020-10-06 02:36:30 error: Redis Server is not ready. Address already in use
 2020-10-06 02:36:32 error: 400 - /subscribers - POST - 2 - Ayni repository ayni kullanici icin daha once olusturulmustur. - ::1 - 
+2020-10-06 09:15:21 error: Slack bot is not ready. auth.test missing params: token

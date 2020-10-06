@@ -41,8 +41,7 @@ module.exports.getLatestAndUpdatePackages = () => {
  *  Step 16: Akabinde R1 ve R2 de olan Ali, Veli, Ahmet e mail at.
  * */
 module.exports.subscriberSchedulerJob = () => {
-    // const jobName = moment().tz(CONSTANTS.MOMENT_ISTANBUL_TIMEZONE).format('HH:mm');
-    const jobName = '02:37'; // TODO TEST
+    const jobName = moment().tz(CONSTANTS.MOMENT_ISTANBUL_TIMEZONE).format('HH:mm');
     const jobInfo = {
         jobName,
     };
