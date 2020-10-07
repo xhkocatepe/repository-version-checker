@@ -7,4 +7,5 @@ module.exports = {
         MAIL_SERVER_USERNAME: process.env.MAIL_SERVER_USERNAME,
         MAIL_SERVER_PASSWORD: process.env.MAIL_SERVER_PASSWORD,
     },
+    CRON_EXPR_FOR_ALL_UPDATE_PACKAGES: process.env.CRON_EXPR_FOR_ALL_UPDATE_PACKAGES,
 };

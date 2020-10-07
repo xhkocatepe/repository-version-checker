@@ -2,6 +2,7 @@ const kue = require('kue-scheduler');
 const moment = require('moment-timezone');
 const worker = require('./worker');
 const logger = require('../config/winston');
+const config = require('../config');
 
 const CONSTANTS = require('../utils/constants');
 
@@ -13,7 +14,7 @@ module.exports.getLatestAndUpdatePackages = () => {
         .createJob(jobName, { timezone: CONSTANTS.MOMENT_ISTANBUL_TIMEZONE })
         .attempts(3);
 
-    Queue.every(CONSTANTS.CRON_EXPR_FOR_ALL_UPDATE_PACKAGES, job);
+    Queue.every(config.CRON_EXPR_FOR_ALL_UPDATE_PACKAGES, job);
 
     worker.getLatestAndUpdatePackages({ jobName });
 };
