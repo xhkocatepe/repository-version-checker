@@ -35,8 +35,6 @@ module.exports.PACKAGES_INFO = () => {
 
 module.exports.HTTP_NOT_FOUND = 404;
 
-module.exports.CRON_EXPR_FOR_ALL_UPDATE_PACKAGES = '*/3 * * * *'; // Every 1 minutes
-
 module.exports.JOB_SCHEDULER_NAME_FOR_ALL_UPDATE_PACKAGES = 'allPackagesCheck';
 
 module.exports.MOMENT_ISTANBUL_TIMEZONE = 'Europe/Istanbul';
