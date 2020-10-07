@@ -1,0 +1,8 @@
+apps:
+  - script: bin/www
+    name: repository-version-checker
+    instances: 1
+    exec_mode: cluster
+    watch : ../
+    log_date_format : YYYY-MM-DD HH:mm Z
+    ignore_watch : [".idea","error.log","error1.log","node_modules"]
