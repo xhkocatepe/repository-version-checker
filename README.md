@@ -9,7 +9,7 @@ After run,
 
 Open the web site
 
-http://localhost:1338/subscribers 
+http://ec2-54-152-32-252.compute-1.amazonaws.com:3535/subscribers
 
 You can enter two fields
 
